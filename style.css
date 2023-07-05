@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.container{
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+td {
+    height: 75px;
+    width: 75px;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+    animation: show 1s;
+    font-weight: 550;
+    background: #faf43a48;
+}
+
+td:first-child{
+    border-radius: 10px 0px 0px 10px;
+}
+
+td:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.money{
+    color: rgb(4, 150, 60);
+}
+
+table{
+    margin-top: 10px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+select{
+    padding: 0 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-radius: 2px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
